@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplatCollect.Android", "Xpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplatCollect.iOS", "XplatCollect.iOS\XplatCollect.iOS.csproj", "{58FF3D24-A1E4-41B5-BECE-49C5C4524FA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplatCollect", "XplatCollect\XplatCollect.csproj", "{FEACDA42-C581-4FF5-8546-E512C8778F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XplatCollect", "XplatCollect\XplatCollect.csproj", "{FEACDA42-C581-4FF5-8546-E512C8778F46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

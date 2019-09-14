@@ -1,16 +1,18 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Prism.DryIoc;
+using Prism.Ioc;
 
 namespace XplatCollect
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+          
         }
 
         protected override void OnStart()
@@ -26,6 +28,16 @@ namespace XplatCollect
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnInitialized()
+        {
+            throw new NotImplementedException();
         }
     }
 }
