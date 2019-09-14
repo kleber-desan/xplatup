@@ -3,41 +3,39 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.DryIoc;
 using Prism.Ioc;
+using XplatCollect.Views;
+using Prism;
 
 namespace XplatCollect
 {
     public partial class App : PrismApplication
     {
-        public App()
+        public App():this(null){
+        }
+        public App(IPlatformInitializer platformInitializer)
+            : base(platformInitializer,true)
         {
-            InitializeComponent();
-
-          
         }
 
-        protected override void OnStart()
+        public App(IPlatformInitializer platformInitializer, bool setFormsDependencyResolver)
+            : base(platformInitializer, setFormsDependencyResolver)
         {
-            // Handle when your app starts
         }
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            throw new NotImplementedException();
+
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<HomePage>();
         }
 
-        protected override void OnInitialized()
+
+        protected override async void OnInitialized()
         {
-            throw new NotImplementedException();
+            InitializeComponent();
+            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(HomePage)}");
+            
         }
     }
 }
