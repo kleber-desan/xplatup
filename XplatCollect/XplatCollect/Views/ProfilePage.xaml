@@ -7,9 +7,13 @@
              x:Class="XplatCollect.Views.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Kleber"/>
+            <Image Source="lg_krebi.png"/>
+            <Label Text="Minha colecao de muitos carrinhos é repleta de diversos modelos"/>
         </StackLayout>
+               
+          
+            
+        
     </ContentPage.Content>
 </ContentPage>
