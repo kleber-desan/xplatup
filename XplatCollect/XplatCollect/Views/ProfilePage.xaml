@@ -1,15 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              mc:Ignorable="d"
              x:Class="XplatCollect.Views.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Kleber"/>
-            <Image Source="lg_krebi.png"/>
-            <Label Text="Minha colecao de muitos carrinhos é repleta de diversos modelos"/>
+
+            <Label Text="Kleber Desan" FontSize="Large" FontAttributes="Bold"/>
+
+            <pancake:PancakeView BackgroundColor="Gray"
+                     CornerRadius="40,40,40,40"
+                     IsClippedToBounds="True"
+                     HorizontalOptions="StartAndExpand"
+                     HeightRequest="100">
+            
+            
+            <Image Source="lg_krebi.png"
+                
+                  HeightRequest="120"
+                  WidthRequest="120"
+                  HorizontalOptions="StartAndExpand"
+                  VerticalOptions="StartAndExpand"
+                  Aspect="Fill" />
+
+            </pancake:PancakeView>
+
+            <Label Text="Colecionador de diversas miniaturas de Hot wheels asdkajsdkjadadasdnakdakdkadkas asd asd asd asd asdasd  asd asd as ddjasdadlakjdasdas " TextColor="Black" FontSize="Medium"/>
         </StackLayout>
                
           
