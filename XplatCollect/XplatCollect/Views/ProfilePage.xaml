@@ -8,9 +8,11 @@
              mc:Ignorable="d"
              x:Class="XplatCollect.Views.ProfilePage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout >
 
             <Label Text="Kleber Desan" FontSize="Large" FontAttributes="Bold"/>
+            
+            
 
             <pancake:PancakeView BackgroundColor="Gray"
                      CornerRadius="40,40,40,40"
@@ -26,12 +28,14 @@
                   HorizontalOptions="StartAndExpand"
                   VerticalOptions="StartAndExpand"
                   Aspect="Fill" />
-
+                
+                
             </pancake:PancakeView>
 
             <Label Text="Colecionador de diversas miniaturas de Hot wheels asdkajsdkjadadasdnakdakdkadkas asd asd asd asd asdasd  asd asd as ddjasdadlakjdasdas " TextColor="Black" FontSize="Medium"/>
         </StackLayout>
-               
+        
+        
           
             
         
